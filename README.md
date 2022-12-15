@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](Article preview component desktop view screenshot.png)
-![](Article preview component mobile view screenshot.png)
+![desktop view](./Article%20preview%20component%20desktop%20view%20screenshot.png)
+![mobile view](./Article%20preview%20component%20mobile%20view%20screenshot.png)
 
 ### Links
 
