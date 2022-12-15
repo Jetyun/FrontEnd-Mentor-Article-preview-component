@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap')
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Manrope', sans-serif
+
+$color_one: hsl(217, 19%, 35%) //Very Dark Grayish Blue
+$color_two: hsl(214, 17%, 51%) //Desaturated Dark Blue
+$color_three: hsl(212, 23%, 69%) //Grayish Blue
+$color_four: hsl(210, 46%, 95%) //Light Grayish Blue
+$medium_font_weight: 500
+$bold_font_weight: 700
+//compulsory CSS for FrontEnd Mentor Challenge
+.attribution 
+    font-size: 11px
+    text-align: center
+.attribution a 
+    color: hsl(228, 45%, 44%)
+//HTML tag
+html
+    background-color: rgb(237, 242, 248)
+main
+    width: min(80%, 300px) 
+    border-radius: 10px
+    background-color: white
+    margin: auto
+    margin-top: 50px
+    position: relative
+//class
+.clip
+    height: 190px
+    overflow: hidden
+    margin: auto
+    width: min(100%,300px)
+.main_pic
+    margin: auto
+    width: min(100%,300px)
+    height: 250px
+    margin-top: -15px
+    border-radius: 30px 30px 0px 0px
+.primary
+    padding: 35px 30px 0px 30px
+.primary_explanation
+    color: $color_two
+    font-weight: $medium_font_weight
+    font-size: 0.76rem
+.primary_title, .primary_explanation
+    margin-bottom: 20px
+.primary_title
+    color: $color_one
+    font-weight: $bold_font_weight
+    font-size: 0.9rem
+.secondary
+    padding: 25px 30px 
+.secondary_button_background, .tertiary_button_background
+    float:  right
+    border-radius: 100px
+.secondary_button_background
+    background-color: $color_four
+    margin-top: -15px
+    padding: 10px
+.secondary_detail
+    color: $color_three
+    font-size: 0.76rem
+    width: 300px
+    display: inline
+.secondary_explanation
+    font-weight: $bold_font_weight
+    font-size: 0.8125rem
+    color: $color_one
+    display: inline
+.secondary_icon
+    float:  right
+.secondary_pic
+    border-radius: 100px
+    float: left
+    width: 35px
+    height: 35px
+    margin-right: 10px
+.tertiary
+    display: none
+    position: absolute
+    bottom: 0
+    background-color: $color_one
+    width: 100%
+    padding: 20px 30px 
+    border-radius: 0px 0px 10px 10px
+.tertiary_boxOne
+    display: inline
+    width: 200px
+.tertiary_button_background
+    background-color: $color_two
+    padding: 5px
+    display: none
+    position: absolute
+    bottom: 20px
+    width: 32px
+    height: 32px
+    right: 32px
+    z-index: 10
+.tertiary_explanation
+    display: inline
+    margin-right: 15px
+    color: $color_three
+    font-size: 13px
+    letter-spacing: 5px
+    height: 20px
+    margin-top: -5px
+.tertiary_icon
+    filter: invert(100%) sepia(3%) saturate(7%) hue-rotate(6deg) brightness(10600%) contrast(100%)
+    margin-left: 3px
+.tertiary_socialIcon
+    margin-right: 15px
+
+@media only screen and (min-width: 874px)
+    main
+        display: flex
+        flex-direction: row
+        height: 280px
+        width: 685px
+    .clip
+        height: 350px
+        width: 375px
+        overflow: hidden
+    .main_pic
+        margin: auto
+        width: 350px
+        height: 280px
+        margin-top: 0
+        border-radius: 10px 0px 0px 10px
+    .primary
+        width: 400px
+    .primary_explanation
+        margin-bottom: 0
+    .primary_title
+        font-size: 20px
+    .tertiary
+        padding: 12px 20px
+        width: 250px
+        right: -80px
+        bottom: 90px
+        border-radius: 15px
+    .tertiary::before //chat bubble tail
+        content:""
+        width: 0
+        height: 0
+        position: absolute
+        bottom: -10px
+        left: 100px
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 20px solid $color_one
+
+    .tertiary_button_background
+        bottom: 30px
+    .tertiary_explanation
+        margin-left: 10px
+
+
+
+
+
